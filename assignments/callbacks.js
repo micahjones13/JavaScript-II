@@ -64,7 +64,7 @@ function multiplyNums(x, y, cb) {
 
 //contains
 function check (arr, str){
-  return arr.some(function (item) {return item == str} );
+  return arr.some(function (item) {return item === str} );
  }
  function contains(item, list, cb) {
    // contains checks if an item is present inside of the given array/list.
@@ -72,7 +72,7 @@ function check (arr, str){
    return cb(list, item);
  }
  
- console.log(contains('bricks', items, check));
+ console.log(contains('Gum', items, check)); //true
 
 /* STRETCH PROBLEM */
 
